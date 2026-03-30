@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dylan Giddens · Marketing & Brand</title>
+  <title>Dylan Giddens</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet"/>
@@ -988,7 +988,7 @@
     <h2 class="section-title reveal" style="margin-bottom:.5rem">LET'S<br/><span class="outline">MAKE IT</span></h2>
     <p class="reveal" style="font-family:var(--serif);font-style:italic;color:rgba(240,232,255,.45);font-size:1.1rem;margin-bottom:2rem">Open to brand strategy roles, internships, and creative collaborations.</p>
     <div class="contact-buttons reveal">
-      <a href="/cdn-cgi/l/email-protection#e5828c8181808b96819c89848bdca58288848c89cb868a88" class="contact-btn">
+      <a href="javascript:void(0)" onclick="window.location.href=\'mailto:giddensdylan9@gmail.com\'" class="contact-btn">
         <span class="contact-btn-icon">✉</span> Email
       </a>
       <a href="tel:8134037517" class="contact-btn">
@@ -1091,4 +1091,10 @@
     sections.forEach(s=>{
       if(window.scrollY>=s.offsetTop-200) current=s.id;
     });
-    document.querySelectorA
+    document.querySelectorAll('.nav-links a').forEach(a=>{
+      a.style.color = a.getAttribute('href')==='#'+current ? 'var(--accent)' : '';
+    });
+  });
+</script>
+</body>
+</html>
