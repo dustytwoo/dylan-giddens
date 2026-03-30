@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dylan Giddens · Marketing & Brand</title>
+  <title>Dylan Giddens</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet"/>
@@ -503,6 +503,48 @@
     #lb-close:hover{color:var(--fg)}
 
     /* ── CONTACT ── */
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .contact-btn {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 0.9rem 2rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      clip-path: polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .contact-btn:hover {
+      background: var(--accent2);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(192,132,252,0.3);
+    }
+    .contact-btn-outline {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      clip-path: none;
+    }
+    .contact-btn-outline:hover {
+      background: rgba(192,132,252,0.1);
+      box-shadow: 0 10px 30px rgba(192,132,252,0.15);
+    }
+    .contact-btn-icon {
+      font-size: 0.9rem;
+    }
+
     .contact-bg-text{
       position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
       pointer-events:none;overflow:hidden;
@@ -588,7 +630,7 @@
         <span class="eq-bar"></span>
         <span class="eq-bar"></span>
       </span>
-      Marketing · Music · Brand Strategy
+      Marketing · Brand Management · FGCU
     </p>
     <h1 class="hero-name">
       DYLAN<br/><span class="line2">GIDDENS</span>
@@ -654,7 +696,7 @@
     <span class="marquee-item">AI & Brand <span class="marquee-dot">◆</span></span>
     <span class="marquee-item">Concert Photography <span class="marquee-dot">◆</span></span>
     <span class="marquee-item">Entertainment Marketing <span class="marquee-dot">◆</span></span>
-    <span class="marquee-item">SBDC Consulting <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">FPRA Member <span class="marquee-dot">◆</span></span>
     <!-- duplicate -->
     <span class="marquee-item">Floyd Nation <span class="marquee-dot">◆</span></span>
     <span class="marquee-item">Beats by Dre <span class="marquee-dot">◆</span></span>
@@ -665,7 +707,7 @@
     <span class="marquee-item">AI & Brand <span class="marquee-dot">◆</span></span>
     <span class="marquee-item">Concert Photography <span class="marquee-dot">◆</span></span>
     <span class="marquee-item">Entertainment Marketing <span class="marquee-dot">◆</span></span>
-    <span class="marquee-item">SBDC Consulting <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">FPRA Member <span class="marquee-dot">◆</span></span>
   </div>
 </div>
 
@@ -682,15 +724,15 @@
     <div>
       <h2 class="section-title reveal">STORY<br/><span class="outline">TELLER</span></h2>
       <div class="about-body reveal">
-        <p>I'm a marketing student at FGCU pursuing a <strong>BS in Marketing with a minor in Brand Management</strong>, aiming for a career in entertainment marketing with a focus on music.</p>
-        <p>As a <strong>Marketing Intern for Floyd Nation</strong>, I drive tour promotions, create high-impact social content, and coordinate with venues and promoters. In 2025, I externed with <strong>Beats by Dre</strong>, analyzing 4,000+ consumer responses to uncover Gen Z insights on audio behavior.</p>
+        <p>I'm a marketing student at FGCU pursuing a <strong>BS in Marketing with a minor in Brand Management</strong>, with relevant coursework in Consumer Behavior, Marketing Research, Brand Strategies, and Product &amp; Brand Management.</p>
+        <p>As a <strong>Tour Marketing and Media Coordination Intern for Floyd Nation</strong>, I develop short-form video content and social assets across Meta, growing engagement from single-digit to triple-digit interactions. In 2025, I externed with <strong>Beats by Dre</strong>, designing and deploying a 4,000+ response consumer survey and delivering Gen Z insights through data dashboards and stakeholder presentations.</p>
         <p>I'm also an RA at FGCU and a mentee in the Lutgert College of Business Mentorship Program · always building, always connecting. Selected as an <strong>NSLS Presidential Nominee</strong>.</p>
       </div>
       <div class="about-stats reveal">
         <div class="stat"><div class="stat-n">4K+</div><div class="stat-l">Responses analyzed</div></div>
-        <div class="stat"><div class="stat-n">4K+</div><div class="stat-l">Residents reached</div></div>
-        <div class="stat"><div class="stat-n">SBDC</div><div class="stat-l">Market Research Consulting</div></div>
-        <div class="stat"><div class="stat-n">2026</div><div class="stat-l">FGCU Graduation</div></div>
+        <div class="stat"><div class="stat-n">4K+</div><div class="stat-l">Residents served as RA</div></div>
+        <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Conflict resolution rate</div></div>
+        <div class="stat"><div class="stat-n">2026</div><div class="stat-l">Expected graduation</div></div>
       </div>
     </div>
   </div>
@@ -705,13 +747,13 @@
     <div class="track reveal">
       <div class="track-num">01</div>
       <div class="track-info">
-        <h3>Floyd Nation · Marketing Intern</h3>
-        <p>Tour promotions and media coordination for a Pink Floyd tribute band. Created reels, captions, and carousels driving engagement across platforms. Captured live-show photography and coordinated directly with venues and promoters to deliver assets on time.</p>
+        <h3>Floyd Nation · Tour Marketing and Media Coordination Intern</h3>
+        <p>Developed and published short-form video content (Reels) and static social assets across Meta and Facebook communities, growing engagement from single-digit to triple-digit interactions. Captured and edited live show photography and video to support artist branding and digital campaign execution. Monitored performance metrics and managed community engagement.</p>
         <div class="track-tags">
-          <span class="track-tag">Social Media</span>
-          <span class="track-tag">Tour Marketing</span>
+          <span class="track-tag">Short-Form Video</span>
+          <span class="track-tag">Meta Platforms</span>
           <span class="track-tag">Photography</span>
-          <span class="track-tag">Meta</span>
+          <span class="track-tag">Community Management</span>
         </div>
         <div class="now-playing"><div class="np-dot"></div><span class="np-label">Now Playing</span></div>
       </div>
@@ -721,13 +763,13 @@
     <div class="track reveal">
       <div class="track-num">02</div>
       <div class="track-info">
-        <h3>Beats by Dre · Consumer Research Extern</h3>
-        <p>Analyzed 4,000+ consumer survey responses for an audio industry client. Applied AI prompting and analysis frameworks to uncover Gen Z trends in audio behavior. Delivered findings via a data dashboard and structured presentations.</p>
+        <h3>Beats by Dre · Consumer Behavior and Market Analysis Extern</h3>
+        <p>Defined research objectives and applied consumer behavior frameworks and AI-assisted analysis for a client in the audio industry. Designed and deployed a 4,000+ response consumer survey using Google Forms and chatbot tools. Synthesized results into data visualizations and dashboards, delivering actionable Gen Z insights through stakeholder presentations.</p>
         <div class="track-tags">
-          <span class="track-tag">Market Research</span>
-          <span class="track-tag">Gen Z Insights</span>
+          <span class="track-tag">Consumer Behavior</span>
+          <span class="track-tag">Survey Design</span>
           <span class="track-tag">Data Visualization</span>
-          <span class="track-tag">AI Prompting</span>
+          <span class="track-tag">AI Analysis</span>
         </div>
         <a href="https://gamma.app/docs/Dominating-The-Market-with-Beats-by-Dre-qqcm8540ausnet1" target="_blank" class="track-link">View Presentation ↗</a>
         <div class="now-playing"><div class="np-dot"></div><span class="np-label">Now Playing</span></div>
@@ -738,12 +780,13 @@
     <div class="track reveal">
       <div class="track-num">03</div>
       <div class="track-info">
-        <h3>FGCU Resident Assistant · Campus Marketing</h3>
-        <p>Designed flyer, email, and social media campaigns that drove attendance at monthly events for 4,000+ residents. Managed front desk operations and strengthened campus community engagement across an entire residential hall system.</p>
+        <h3>Florida Gulf Coast University · Student Resident Assistant</h3>
+        <p>Designed flyer and email campaigns to promote monthly events for 4,000+ residents. Served in an on-call leadership capacity for 50+ residents, coordinating programs and resolving conflicts with a 100% resolution rate. Managed front desk operations using StarRez, processing 50+ check-ins/check-outs annually.</p>
         <div class="track-tags">
           <span class="track-tag">Event Marketing</span>
-          <span class="track-tag">Community Building</span>
-          <span class="track-tag">Campaigns</span>
+          <span class="track-tag">Community Leadership</span>
+          <span class="track-tag">StarRez</span>
+          <span class="track-tag">Operations</span>
         </div>
         <div class="now-playing"><div class="np-dot"></div><span class="np-label">Now Playing</span></div>
       </div>
@@ -753,13 +796,13 @@
     <div class="track reveal">
       <div class="track-num">04</div>
       <div class="track-info">
-        <h3>SBDC · Market Research Consultant</h3>
-        <p>Conducted a market research project consulting for a local auto shop. Surveyed 100 locals to gather consumer insights and analyzed social media performance to deliver actionable recommendations for growth.</p>
+        <h3>SBDC · Small Business Market Research Consultant</h3>
+        <p>Conducted a market research consulting project for a local auto shop. Surveyed 100 community members to gather consumer insights and analyzed social media performance to deliver actionable growth recommendations.</p>
         <div class="track-tags">
           <span class="track-tag">Market Research</span>
           <span class="track-tag">Consumer Surveys</span>
           <span class="track-tag">Social Media Analytics</span>
-          <span class="track-tag">Small Business</span>
+          <span class="track-tag">Small Business Consulting</span>
         </div>
         <div class="now-playing"><div class="np-dot"></div><span class="np-label">Now Playing</span></div>
       </div>
@@ -769,7 +812,7 @@
     <div class="track reveal">
       <div class="track-num">05</div>
       <div class="track-info">
-        <h3>AI & Brand Authenticity · Thought Leadership</h3>
+        <h3>AI and Brand Authenticity · Thought Leadership</h3>
         <p>LinkedIn series exploring how brands can adopt AI tools without sacrificing voice or trust. Grounded in real consumer psychology and the Anthropic AI Fluency Framework. Recognized for confident, human-sounding editorial approach.</p>
         <div class="track-tags">
           <span class="track-tag">Thought Leadership</span>
@@ -827,8 +870,8 @@
   <div class="skills-grid">
     <div class="skill-card reveal">
       <div class="skill-icon">// 01</div>
-      <h4>Social Media Content</h4>
-      <p>Reels, carousels, captions, and photography. Platform-native strategy tuned to engagement and conversion across Meta and Instagram.</p>
+      <h4>Social Media Marketing</h4>
+      <p>Short-form video, Reels, static assets, community management, and performance analytics across Meta platforms and Facebook communities.</p>
     </div>
     <div class="skill-card reveal">
       <div class="skill-icon">// 02</div>
@@ -837,8 +880,8 @@
     </div>
     <div class="skill-card reveal">
       <div class="skill-icon">// 03</div>
-      <h4>Consumer Research</h4>
-      <p>Qualitative and quantitative analysis, survey design, data visualization. Proven with 4,000+ real consumer responses at Beats by Dre.</p>
+      <h4>Analytics and Research</h4>
+      <p>Survey design, data visualization, competitive analysis, social media analytics. Proficient in Google Sheets, Excel, Google Workspace, and foundational SQL and SAP ERP.</p>
     </div>
     <div class="skill-card reveal">
       <div class="skill-icon">// 04</div>
@@ -955,14 +998,17 @@
   <div class="contact-inner">
     <p class="section-eyebrow reveal" style="justify-content:center;margin-bottom:1rem">Contact</p>
     <h2 class="section-title reveal" style="margin-bottom:.5rem">LET'S<br/><span class="outline">MAKE IT</span></h2>
-    <p class="reveal" style="font-family:var(--serif);font-style:italic;color:rgba(240,232,255,.45);font-size:1.1rem;margin-bottom:1.5rem">Open to brand strategy roles, internships, and creative collaborations.</p>
-    <a href="/cdn-cgi/l/email-protection#caada3aeaeafa4b9aeb3a6aba4f38aada7aba3a6e4a9a5a7" class="contact-email reveal">
-      giddens<span>dylan9</span>@gmail.com
-    </a>
-    <div class="social-row reveal">
-      <a href="https://www.linkedin.com/in/dylan-giddens" target="_blank">LinkedIn</a>
-      <a href="#media">Photography</a>
-      <a href="#" target="_blank">Resume ↓</a>
+    <p class="reveal" style="font-family:var(--serif);font-style:italic;color:rgba(240,232,255,.45);font-size:1.1rem;margin-bottom:2rem">Open to brand strategy roles, internships, and creative collaborations.</p>
+    <div class="contact-buttons reveal">
+      <a href="mailto:giddensdylan9@gmail.com" class="contact-btn">
+        <span class="contact-btn-icon">✉</span> Email
+      </a>
+      <a href="tel:8134037517" class="contact-btn">
+        <span class="contact-btn-icon">✆</span> Call
+      </a>
+      <a href="https://www.linkedin.com/in/dylan-giddens" target="_blank" class="contact-btn contact-btn-outline">
+        <span class="contact-btn-icon">in</span> LinkedIn
+      </a>
     </div>
   </div>
 </div>
