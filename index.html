@@ -975,7 +975,7 @@
   <p>Marketing · Brand · Music · FGCU</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Cursor
   const cur = document.getElementById('cur');
   const ring = document.getElementById('cur-ring');
@@ -992,8 +992,10 @@
 
   // Vinyl pause on hover
   const vinyl = document.getElementById('vinyl');
-  vinyl.addEventListener('mouseenter', ()=>vinyl.classList.add('paused'));
-  vinyl.addEventListener('mouseleave', ()=>vinyl.classList.remove('paused'));
+  if(vinyl){
+    vinyl.addEventListener('mouseenter', ()=>vinyl.classList.add('paused'));
+    vinyl.addEventListener('mouseleave', ()=>vinyl.classList.remove('paused'));
+  }
 
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
@@ -1020,32 +1022,36 @@
   // Lightbox
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lb-img');
-  document.querySelectorAll('.photo-item img').forEach(img => {
-    img.addEventListener('click', e => {
-      e.stopPropagation();
-      lbImg.src = img.src;
-      lb.classList.add('open');
+  if(lb && lbImg){
+    document.querySelectorAll('.photo-item img').forEach(img => {
+      img.addEventListener('click', e => {
+        e.stopPropagation();
+        lbImg.src = img.src;
+        lb.classList.add('open');
+      });
     });
-  });
-  lb.addEventListener('click', ()=>lb.classList.remove('open'));
+    lb.addEventListener('click', ()=>lb.classList.remove('open'));
+  }
 
   // Text scramble on hero name
   const nameEl = document.querySelector('h1.hero-name');
-  const originalText = 'DYLAN';
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#';
-  let frame = 0;
-  function scramble() {
-    let out = '';
-    for(let i=0; i<originalText.length; i++) {
-      if(i < frame/3) out += originalText[i];
-      else out += chars[Math.floor(Math.random()*chars.length)];
+  if(nameEl){
+    const originalText = 'DYLAN';
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#';
+    let frame = 0;
+    function scramble() {
+      let out = '';
+      for(let i=0; i<originalText.length; i++){
+        if(i < frame/3) out += originalText[i];
+        else out += chars[Math.floor(Math.random()*chars.length)];
+      }
+      nameEl.childNodes[0].textContent = out;
+      frame++;
+      if(frame < originalText.length*3+10) requestAnimationFrame(scramble);
+      else nameEl.childNodes[0].textContent = originalText;
     }
-    nameEl.childNodes[0].textContent = out;
-    frame++;
-    if(frame < originalText.length*3+10) requestAnimationFrame(scramble);
-    else nameEl.childNodes[0].textContent = originalText;
+    setTimeout(scramble, 600);
   }
-  setTimeout(scramble, 600);
 
   // Nav active highlight on scroll
   const sections = document.querySelectorAll('[id]');
@@ -1054,4 +1060,10 @@
     sections.forEach(s=>{
       if(window.scrollY>=s.offsetTop-200) current=s.id;
     });
-    document.querySelectorA
+    document.querySelectorAll('.nav-links a').forEach(a=>{
+      a.style.color = a.getAttribute('href')==='#'+current ? 'var(--accent)' : '';
+    });
+  });
+</script>
+</body>
+</html>
