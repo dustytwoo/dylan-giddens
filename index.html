@@ -507,6 +507,14 @@
     }
     setTimeout(scramble,600);
   }
+
+  // Set email link - built at runtime to avoid Cloudflare rewriting
+  var eb = document.getElementById('email-btn');
+  if(eb) {
+    var u='giddensdylan9', d='gmail', t='com';
+    eb.href = 'mailto:' + u + '@' + d + '.' + t;
+  }
+
   const sections = document.querySelectorAll('[id]');
   window.addEventListener('scroll', ()=>{
     let current='';
